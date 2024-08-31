@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="public/css/style.css" />
+    <title>Meu Portfólio</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a href="#" onclick="showContent('home')"
+              ><img src="public/img/home.svg" alt="Início"
+            /></a>
+          </li>
+          <li>
+            <a href="#" onclick="showContent('sobre')"
+              ><img src="public/img/person.svg" alt="Sobre Mim"
+            /></a>
+          </li>
+          <li>
+            <a href="#" onclick="showContent('formacao')"
+              ><img src="public/img/book.svg" alt="Formação"
+            /></a>
+          </li>
+          <li>
+            <a href="#" onclick="showContent('contato')"
+              ><img src="public/img/fone.svg" alt="Contato"
+            /></a>
+          </li>
+          <li>
+            <a href="public/portifolio/index.html"
+              ><img src="public/img/arrow-r.svg" alt="Projetos"
+            /></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Conteúdos que serão exibidos/ocultados -->
+      <section id="home" class="content" style="display: block">
+        <h1>Bem-vindo ao Meu Portfólio</h1>
+        <p>
+          Aqui você encontra informações sobre mim, minha formação e meus
+          projetos.
+        </p>
+      </section>
+
+      <section id="sobre" class="content" style="display: none">
+        <h1>Sobre Mim</h1>
+        <div class="bio-content">
+          <p><strong>Nome:</strong> Nycolas Lacerda Pereira</p>
+          <p><strong>Nascimento:</strong> 07/05/2001</p>
+          <p><strong>Sexo:</strong> Masculino</p>
+          <p><strong>Hobbies:</strong> Jogos, Animes, Esportes, Programação.</p>
+        </div>
+      </section>
+
+      <section id="formacao" class="content" style="display: none">
+        <h1>Minha Formação</h1>
+        <div class="bio-content">
+          <p>
+            <strong>Especialização:</strong> Desenvolvedor web especializado em
+            PHP com conhecimento em JavaScript.
+          </p>
+          <p><strong>Frameworks:</strong> Explorando Laravel e Codeigniter.</p>
+          <p>
+            <strong>Formação:</strong> Técnico em Informática pelo CEFET-MG,
+            cursando Análise e Desenvolvimento de Sistemas pela Uninter.
+          </p>
+          <p><strong>Idiomas:</strong> Português</p>
+        </div>
+      </section>
+
+      <section id="contato" class="content" style="display: none">
+        <h1>Contato</h1>
+        <form action="#" method="post">
+          <label for="name">Nome:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Mensagem:</label>
+          <textarea id="message" name="message" required></textarea>
+
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Nycolas Lacerda Pereira - Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="public/js/script.js"></script>
+  </body>
+</html>
